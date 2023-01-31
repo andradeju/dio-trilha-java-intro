@@ -1,6 +1,7 @@
 public class Switch {
     public static void main(String[] args) {
         switchSemana();
+        switchFerias();
     }
     private static void switchSemana() {
         String dia = "friday";
@@ -31,5 +32,18 @@ public class Switch {
                 break;
         }
 
+    }
+    private static void switchFerias(){
+        String mes = "abril";
+        switch (mes) {
+            case "dezembro":
+            case "janeiro":
+            case "abril":
+                System.out.println("Férias!");
+                break;
+            default:
+                System.out.println("Mês indefinido");
+                break;
+        }
     }
 }
